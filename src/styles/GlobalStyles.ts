@@ -6,7 +6,6 @@ export const GlobalStyles = createGlobalStyle`
         padding:0;
         box-sizing: border-box;
         outline: none;
-        font-family: 'Inter', sans-serif;
     }
 
     :root{
@@ -38,6 +37,7 @@ export const GlobalStyles = createGlobalStyle`
     body{
         background: var(--background);
         color: var(--text);
+        font-family: 'Inter', sans-serif;
 
         >input, textarea, button{
             font: 400 16rem "Inter", sans-serif;
