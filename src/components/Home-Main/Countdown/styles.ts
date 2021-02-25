@@ -41,4 +41,87 @@ export const Number = styled.div`
 
 `
 
+export const StartButton = styled.button`
+    width:100%;
+    height: 5rem;
+
+    margin-top:2rem;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border: 0;
+    border-radius: 5px;
+
+    background: var(--blue);
+    color: var(--white);
+
+    font-size: 1.25rem;
+    font-weight:600;
+
+    transition: background-color 0.2s;
+   
+
+    :hover{
+        background: var(--blue-dark)
+    }
+
+`
+
+export const StopButton = styled.button`
+    width:100%;
+    height: 5rem;
+
+    margin-top:2rem;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border: 0;
+    border-radius: 5px;
+
+    background: var(--white);
+    color: var(--title);
+
+    font-size: 1.25rem;
+    font-weight:600;
+
+    transition: background-color 0.2s;
+
+    :hover{
+        background: var(--red);
+        color:var(--white)
+    }
+
+`
+
+export const EndButton = styled.button`
+
+    width:100%;
+    height: 5rem;
+
+    margin-top:2rem;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border: 0;
+    border-radius: 5px;
+
+    background: var(--gray-line);
+    color: var(--title);
+
+    font-size: 1.25rem;
+    font-weight:600;
+
+    transition: background-color 0.2s;
+
+    :hover{
+        cursor: not-allowed;
+    }
+`
+
 ;
