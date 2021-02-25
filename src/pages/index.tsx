@@ -1,4 +1,3 @@
-import ExperienceBar from '../components/ExperienceBar'
 import { GlobalStyles } from '../styles/GlobalStyles'
 import HomeMain from '../components/Home-Main/HomeMain'
 
@@ -8,6 +7,7 @@ export default function Home() {
     <div>
       <GlobalStyles />
       <HomeMain />
+
     
     </div>
   )
