@@ -6,7 +6,7 @@ const Countdown: React.FC = () => {
 
   let countdownTimeout: NodeJS.Timeout;
 
-  const [time, setTime] = useState(0.05 * 60);
+  const [time, setTime] = useState(25 * 60);
   const [isActive, setIsActive] = useState(false)
   const [hasFinished, setHasFinished] = useState(false)
 
@@ -35,7 +35,7 @@ const Countdown: React.FC = () => {
   function stopCountdown() {
     clearTimeout(countdownTimeout)
     setIsActive(false);
-    setTime(0.05 * 60)
+    setTime(25 * 60)
   }
   return (
     <>
