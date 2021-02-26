@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { ChallengesContext } from '../../../../contexts/ChallengesContext';
 
 import { Container, Profile } from './styles';
 
 const Home: React.FC = () => {
+  const {level} = useContext(ChallengesContext)
   return (
     <Container>
       <Profile>
@@ -11,7 +13,7 @@ const Home: React.FC = () => {
           <strong>Yago Passos</strong>
           <p>
             <img src="icons/level.svg" alt="Icone Level Up" />
-            Level 1
+            Level {level}
             </p>
         </div>
       </Profile>

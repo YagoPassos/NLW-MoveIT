@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
+import { ChallengesContext } from '../../../contexts/ChallengesContext';
 
 import { Container, Number, StartButton, StopButton, EndButton } from './styles';
 
@@ -6,7 +7,7 @@ const Countdown: React.FC = () => {
 
   let countdownTimeout: NodeJS.Timeout;
 
-  const [time, setTime] = useState(25 * 60);
+  const [time, setTime] = useState(0.05 * 60);
   const [isActive, setIsActive] = useState(false)
   const [hasFinished, setHasFinished] = useState(false)
 
@@ -15,6 +16,9 @@ const Countdown: React.FC = () => {
 
   const [minuteLeft, minuteRight] = String(minutes).padStart(2, '0').split('');
   const [secondLeft, secondRight] = String(seconds).padStart(2, '0').split('')
+
+  const { startNewChallenge } = useContext(ChallengesContext);
+
 
   function startCountdown() {
     setIsActive(true);
@@ -29,13 +33,14 @@ const Countdown: React.FC = () => {
     else if (isActive && time == 0) {
       setHasFinished(true);
       setIsActive(false);
+      startNewChallenge();
     }
   }, [isActive, time])
 
   function stopCountdown() {
     clearTimeout(countdownTimeout)
     setIsActive(false);
-    setTime(25 * 60)
+    setTime(0.05 * 60)
   }
   return (
     <>
