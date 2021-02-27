@@ -103,12 +103,14 @@ export const EndButton = styled.button`
     height: 5rem;
 
     margin-top:2rem;
+    padding-top:6px;
 
     display:flex;
     align-items:center;
     justify-content:center;
 
     border: 0;
+    border-bottom: 6px solid var(--green);
     border-radius: 5px;
 
     background: var(--gray-line);
@@ -119,6 +121,7 @@ export const EndButton = styled.button`
 
     transition: background-color 0.2s;
 
+    
     :hover{
         cursor: not-allowed;
     }
