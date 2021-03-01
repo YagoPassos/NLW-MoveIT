@@ -5,6 +5,8 @@ import Countdown from '../Countdown';
 import HomeProfile from '../Profile/HomeProfile'
 import { Container } from './styles';
 
+import { CountdownProvider } from '../../../contexts/CountdownContext'
+
 import Head from 'next/head';
 import ChallengerBox from '../../ChallengerBox';
 
@@ -19,18 +21,19 @@ const HomeMain: React.FC = () => {
 
       <ExperienceBar />
 
-      <section>
+      <CountdownProvider>
+        <section>
 
-        <div>
-          <HomeProfile />
-          <CompletedChallenges />
-          <Countdown />
-        </div>
-        <div>
-          <ChallengerBox />
-        </div>
-      </section>
-
+          <div>
+            <HomeProfile />
+            <CompletedChallenges />
+            <Countdown />
+          </div>
+          <div>
+            <ChallengerBox />
+          </div>
+        </section>
+      </CountdownProvider>
     </Container>
   );
 };
