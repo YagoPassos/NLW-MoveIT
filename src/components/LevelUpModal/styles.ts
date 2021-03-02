@@ -52,5 +52,9 @@ export const Button = styled.button`
     background: transparent;
     border: 0;
     box-sizing: border-box;
+    width:50px;
+    height:50px;
+
+
 `
-;
+    ;

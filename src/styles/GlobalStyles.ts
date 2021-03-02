@@ -40,7 +40,7 @@ export const GlobalStyles = createGlobalStyle`
         font-family: 'Inter', sans-serif;
 
         >input, textarea, button{
-            font: 400 16rem "Inter", sans-serif;
+            font: 400 1rem "Inter", sans-serif;
         }
     }
 
