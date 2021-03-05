@@ -19,7 +19,7 @@
 <br>
 
 <p align="center">
-  <img alt="Happy" src=".github/printHomePage.png" width="100%">
+  <img alt="Happy" src="https://github.com/YagoPassos/NLW-MoveIT/blob/main/public/printHomePage.PNG?raw=true" width="100%">
 </p>
 
 ## ✨ Tecnologias
